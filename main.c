@@ -63,12 +63,8 @@ int main(void) {
 	thread_t *shelltp = NULL;
 
 	// For ChibiOS
-	halInit();
-	chSysInit();
-
-	// For the usb-serial shell
-	comm_usb_serial_init();
-	shellInit();
+	// halInit();
+	// chSysInit();
 
 	// For the UART interface
 	comm_uart_init();
